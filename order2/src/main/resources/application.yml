@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    name: order
+    name: order2
 ---
 
 spring:
@@ -27,7 +27,7 @@ spring:
                   serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
         event-in:
-          group: order
+          group: order2
           destination: labshopcompleted
           contentType: application/json
         event-out:
@@ -65,7 +65,7 @@ spring:
                   serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
         event-in:
-          group: order
+          group: order2
           destination: labshopcompleted
           contentType: application/json
         event-out:

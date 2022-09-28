@@ -1,12 +1,9 @@
 package labshopcompleted.common;
 
-
-import labshopcompleted.InventoryApplication;
 import io.cucumber.spring.CucumberContextConfiguration;
+import labshopcompleted.InventoryApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @CucumberContextConfiguration
 @SpringBootTest(classes = { InventoryApplication.class })
-public class CucumberSpingConfiguration {
-    
-}
+public class CucumberSpingConfiguration {}
